@@ -1,0 +1,546 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+body {
+	background-color:#59e081;
+	font-family:"arial";
+	font-size:16px;
+	margin:0;
+	padding:0;
+}
+
+
+
+/*HEADER*/
+header {
+	position:fixed
+    background-color: #59e081;
+    width: 100%;
+    height: 150px;
+}
+
+header .header-logo {
+    display: block;
+    width: 309px;
+    height: 150px;
+    margin: 0px 0px 0px 100px;
+    float: left;
+}
+
+header .header-logo a img {
+    width: 80%;
+    height: 80%;
+    border: 3px solid #59e081;
+    padding: 12px 0px 12px 0px;
+}
+
+header .header-logo a img:hover {
+    opacity: 1.0;
+    border: 3px solid #FFFFFF;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 750px;
+    height: 150px;
+    overflow: hidden;
+}
+
+header nav ul li {
+    display: inline;
+    float: left;
+    border: 3px solid #59e081;
+    padding: 0px 0px;
+    margin: 82px 16px 0px 0px;
+}
+
+header nav ul li:hover {
+    border: 3px solid #FFFFFF;
+}
+
+header nav ul li a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: 'Sarabun', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+
+/* Slideshow */
+.slideshow {
+  width: 100%;
+  height: calc(1500/vh);
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.text {
+  color: #FFFFFF;
+  font-size: 4vw;
+  padding: 8px 12px;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);  width: 100%;
+  text-align: center;
+  text-shadow: 4px 4px #000000
+}
+
+.paginanummer {
+  color: #FFFFFF;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3s;
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*INDEX*/
+
+.section2 {
+    width: 100%;
+    height: 350px;
+    margin: 0 auto;
+}
+
+section .pakketten {
+    height: 38px;
+    width: 828px;
+    margin: 0 auto;
+}
+
+section .pakkettenplaatjes {
+    height: 266px;
+    width: 828px;
+    margin: 0 auto;
+}
+
+.pakketten div {
+    float: left;
+    width: 250px;
+    height: 22px;
+    margin: 10px 10px 0px 10px;
+    background-color: #57e080;
+    border: 3px solid #FFFFFF;
+}
+
+.pakketten div:hover {
+    background-color: #111111;
+}
+
+.pakketten div h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Sarabun', sans-serif;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 3px;
+}
+
+.pakkettenplaatjes img {
+    float: left;
+    width: 250px;
+    height: 250px;
+    margin: 10px 10px 0px 10px;
+    border: 3px solid #59e081;
+}
+
+
+.plaatje{
+  height: 350px;
+  width: 100vw;
+  background-image: url(images/afval.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.maaltijden{
+  margin-left: 175px;
+  margin-right: 175px;
+  position: absolute;
+  left: 0px;
+  top: 175px;
+  height: auto;
+  width: 100vw;
+}
+.couscous{
+  border-radius: 15px;
+  position: absolute;
+  display: block;
+  width: 200px;
+  height: 200px;
+  top: 0px;
+  left: 20px;
+  border: hidden solid 0.5px;
+  padding: 0.5px;
+  text-align: left 5px;
+  background-image: url(images/couscous.png);
+  background-color: #ef6a17;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  background-size: 180px 180px;
+  box-shadow: green 1px 1px 1px 1px;
+  transition: all .2s ease-in-out;
+}
+.curry{
+  border-radius: 15px;
+  position: absolute;
+  display: block;
+  width: 200px;
+  height: 200px;
+  top: 0px;
+  left: 275px;
+  border: hidden solid 0.5px;
+  padding: 0.5px;
+  text-align: left 5px;
+  background-image: url(images/couscous.png);
+  background-color: #ef6a17;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  background-size: 180px 180px;
+  box-shadow: green 1px 1px 1px 1px;
+  transition: all .2s ease-in-out;
+}
+.tandoori{
+  border-radius: 15px;
+  position: absolute;
+  display: block;
+  width: 200px;
+  height: 200px;
+  top: 0px;
+  left: 530px;
+  border: hidden solid 0.5px;
+  padding: 0.5px;
+  text-align: left 5px;
+  background-image: url(images/tandoori.png);
+  background-color: #ef6a17;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  background-size: 180px 180px;
+  box-shadow: green 1px 1px 1px 1px;
+  transition: all .2s ease-in-out;
+}
+.lasagne{
+  border-radius: 15px;
+  position: absolute;
+  display: block;
+  width: 200px;
+  height: 200px;
+  top: 220px;
+  left: 20px;
+  border: hidden solid 0.5px;
+  padding: 0.5px;
+  text-align: left 5px;
+  background-image: url(images/lasagne.png);
+  background-color: #ef6a17;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  background-size: 180px 180px;
+  box-shadow: green 1px 1px 1px 1px;
+  transition: all .2s ease-in-out;
+}
+.madras{
+  border-radius: 15px;
+  position: absolute;
+  display: block;
+  width: 200px;
+  height: 200px;
+  top: 220px;
+  left: 275px;
+  border: hidden solid 0.5px;
+  padding: 0.5px;
+  text-align: left 5px;
+  background-image: url(images/madras.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  background-color: #ef6a17;
+  background-size: 180px 180px;
+  box-shadow: green 1px 1px 1px 1px;
+  transition: all .2s ease-in-out;
+}
+
+.erwtensoep{
+  border-radius: 15px;
+  position: absolute;
+  display: block;
+  width: 200px;
+  height: 200px;
+  top: 220px;
+  left: 530px;
+  border: hidden solid 0.5px;
+  padding: 0.5px;
+  text-align: left 5px;
+  background-image: url(images/erwtensoep.png);
+  background-color: #ef6a17;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom;
+  background-size: 180px 180px;
+  box-shadow: green 1px 1px 1px 1px;
+  transition: all .2s ease-in-out;
+}
+
+
+.couscous:hover {
+	opacity: 0.8;
+  opacity: 0.8;
+  transform: scale(1.1);
+  box-shadow: black 2px 2px 2px 2px;
+  background-color: #fcfbd6;
+  text-transform: uppercase;
+  text-decoration-color: black;
+  background-color: #ef2916;
+}
+.curry:hover {
+	opacity: 0.8;
+  transform: scale(1.1);
+  box-shadow: black 2px 2px 2px 2px;
+  background-color: #fcfbd6;
+  text-transform: uppercase;
+  text-decoration-color: black;
+  background-color: #ef2916;
+}
+.lasagne:hover {
+  color: black;
+	opacity: 0.8;
+  opacity: 0.8;
+  transform: scale(1.1);
+  box-shadow: black 2px 2px 2px 2px;
+  background-color: #fcfbd6;
+  text-transform: uppercase;
+  text-decoration-color: black;
+  background-color: #ef2916;
+}
+.madras:hover {
+	opacity: 0.8;
+  opacity: 0.8;
+  transform: scale(1.1);
+  box-shadow: black 2px 2px 2px 2px;
+  background-color: #fcfbd6;
+  text-transform: uppercase;
+  text-decoration-color: black;
+  background-color: #ef2916;
+}
+.tandoori:hover {
+	opacity: 0.8;
+  opacity: 0.8;
+  transform: scale(1.1);
+  box-shadow: black 2px 2px 2px 2px;
+  background-color: #fcfbd6;
+  text-transform: uppercase;
+  text-decoration-color: black;
+  background-color: #ef2916;
+}
+.erwtensoep:hover {
+	opacity: 0.8;
+  opacity: 0.8;
+  transform: scale(1.1);
+  box-shadow: black 2px 2px 2px 2px;
+  background-color: #fcfbd6;
+  text-transform: uppercase;
+  text-decoration-color: black;
+  background-color: #ef2916;
+  display: block;
+}
+
+.prijs{
+  border-radius: 50%;
+  position: absolute;
+  display: block;
+  width: 170px;
+  height: 170px;
+  top: 275px;
+  right: 100px;
+  border: hidden solid 0.5px;
+  padding: 0.5px;
+  background-image: url(images/sticker.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+  background-size: 200px 200px;
+
+}
+h1 {
+	text-align:left;
+	font-size:large;
+	font-weight:bold;
+}
+
+.imgrond  {
+border-radius: 50px;
+background: #22B14C;
+background-position: left top;
+background-repeat: repeat;
+padding: 20px;
+width: 400px;
+height: 300px;
+}
+
+.imgr  {
+position: relative;
+float: right;
+ margin: 0 0 0 20px;
+}
+
+.imgl  {
+position: relative;
+float: left;
+ margin: 0 20px 10px 0;
+}
+
+.mapouter {
+position: relative;
+float: right;
+ margin: 50px 50px 10px 20px;
+}
+
+.info {
+position: relative;
+float: left;
+}
+.contact1{
+  position: relative;
+  float: left;
+  height: auto;
+  width: 750px;;
+}
+.contact2{
+  position: relative;
+  width: auto;
+  height: auto;
+}
+.video1parent{
+  position: absolute;
+  top: 195px;
+  right: 50PX;
+  width: 420px;
+  height: 230px;
+}
+.video1{
+  position: absolute;
+  right: 50px;
+  top: 0px;
+}
+.waaromparent1{
+  position: relative;
+  vertical-align: middle;
+  height: 420px;
+  width: 550px;
+
+}
+.waarom1{
+  position: relative;
+  float: left;
+  height: auto;
+  width: auto;
+}
+
+.waaromparent2{
+  position: relative;
+  vertical-align: top;
+  vertical-align: middle;
+  height: 250px;
+  width: 100vw;
+}
+.waarom2{
+  position: relative;
+  vertical-align: middle;
+  height: 200px;
+  width: 100vw;
+  top: 0px;
+}
+
+
+/*FOOTER*/
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+    background-color: #FFFFFF;
+    color: white;
+}
+
+footer .gegevens {
+    display: inline-block;
+    width: 80%;
+    height: 40px;
+    text-align: center;
+    float: left;
+    color: #22B14C;
+    line-height: 40px;
+}
+
+footer .gegevens ul li {
+    text-align: left;
+    display: inline;
+    font-weight: 600;
+}
+
+footer .logo1 {
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin: 0px 6px 0 32px;
+    background-image: url(images/Facebook.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+footer .logo1:hover {
+    opacity: 0.8;
+}
+
+footer .logo2 {
+    width: 32px;
+    height:32px;
+    float: left;
+    margin: 4px 0px 0 0px;
+    background-image: url(images/Instagram.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+footer .logo2:hover {
+    opacity: 0.8;
+}
